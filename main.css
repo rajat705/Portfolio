@@ -12,13 +12,28 @@ body::-webkit-scrollbar {
 /* Body Header */
 
 #body-header {
-    height: 65vh;
-    opacity: 0.8;
-    background-image: url(Image/bg.webp);
+    height: 60vh;
+    opacity: 2;
+    background-image: url(Image/bgi.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding-top: 1.2rem;
+}
+
+/* Add these styles to your CSS file */
+.header-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2px 50px; /* Adjust padding as needed */
+    /* background-color: #f1f1f1;  */
+    /* Add background color if needed */
+}
+
+.header-images img {
+    max-width: 300px; /* Adjust the image size as needed */
+    height: auto;
 }
 
 
@@ -65,7 +80,7 @@ body::-webkit-scrollbar {
 
 .no-list-style li {
     font-weight: 100;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 
 .no-list-style li a{
@@ -84,21 +99,32 @@ body::-webkit-scrollbar {
     margin: 0px 8px 8px 0px;
 }
 
+.horizontal-list li a{
+    color: rgb(232, 207, 207);
+    text-decoration: none;
+    transition: color 0.5s, border-bottom 4s;
+}
 
-.nav-menu li a {
+.horizontal-list li a:hover {
+    color: rgb(208, 131, 60);
+    border-bottom: 1px solid lightgray);
+}
+
+
+/* .nav-menu li a {
     transition: color 0.5s, border-bottom 4s;
 }
 
 .nav-menu li a:hover {
     color: lightgrey;
     border-bottom: 1px solid black;
-}
+} */
 
 
 /* Name and Social Icons*/
 
 #name-social-container {
-    margin-top: 20vh;
+    margin-top: 5vh;
 }
 
 #my-name {
@@ -111,7 +137,7 @@ body::-webkit-scrollbar {
 
 .social-icons li a i {
     padding: 10px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     border-radius: 50%;
 }
 
@@ -658,6 +684,8 @@ button:focus {
     width: 100%;
 }
 
+
+  
 
 @media only screen and (max-width: 572px) {
     
