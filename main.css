@@ -80,7 +80,7 @@ body::-webkit-scrollbar {
 
 .no-list-style li {
     font-weight: 100;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .no-list-style li a{
@@ -465,7 +465,7 @@ section:nth-child(2n + 1) {
 
 .portfolio-image-container:hover .portfolio-details {
     background-color: #80808078;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 
